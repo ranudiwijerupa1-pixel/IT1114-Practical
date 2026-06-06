@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buy Product</title>
+</head>
+<body>
+
+<h2>Product List</h2>
+
+<div>
+    <p>Product: Mobile Phone</p>
+    <p>Price:200,000.00</p>
+    <button onclick="buyProduct('Mobile Phone')">Buy Now</button>
+</div>
+
+<br>
+
+<div>
+    <p>Product: Laptop</p>
+    <p>Price: 300,000.00</p>
+    <button onclick="buyProduct('Laptop')">Buy Now</button>
+</div>
+
+<p id="message"></p>
+
+<script>
+    function buyProduct(productName) {
+        document.getElementById("message").innerHTML =
+            "✅ You bought: " + productName + " successfully!";
+        
+        alert("Thank you for purchasing " + productName );
+    }
+</script>
+
+</body>
+</html>
